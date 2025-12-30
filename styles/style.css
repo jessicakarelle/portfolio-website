@@ -383,7 +383,6 @@ section:not(.hero-section, .projects-section) {
     padding: 4rem 2rem;
     text-align: center;
 }
-
 .contact-methods {
     display: flex;
     gap: 2rem;
@@ -391,7 +390,6 @@ section:not(.hero-section, .projects-section) {
     flex-wrap: wrap;
     margin-top: 3rem;
 }
-
 .contact-method {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 2rem 3rem;
@@ -400,13 +398,11 @@ section:not(.hero-section, .projects-section) {
     transition: all 0.3s;
     min-width: 250px;
 }
-
 .contact-method:hover {
     background: var(--white);
     color: var(--black);
     transform: translateY(-5px);
 }
-
 .contact-method-label {
     font-size: 0.85rem;
     color: var(--gray-lighter);
@@ -414,11 +410,9 @@ section:not(.hero-section, .projects-section) {
     letter-spacing: 0.1em;
     margin-bottom: 0.5rem;
 }
-
 .contact-method:hover .contact-method-label {
     color: var(--gray-medium);
 }
-
 .contact-method-value {
     font-family: "Space Grotesk", sans-serif;
     font-size: 1.1rem;
@@ -431,7 +425,6 @@ section:not(.hero-section, .projects-section) {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 4rem 0 2rem;
 }
-
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -445,18 +438,15 @@ section:not(.hero-section, .projects-section) {
     transition: all 0.3s;
     text-decoration: none;
 }
-
 .social-icon:hover {
     background: var(--gray-lighter);
     transform: translateY(-3px);
 }
-
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeIn 0.8s forwards;
 }
-
 @keyframes fadeIn {
     to {
         opacity: 1;
