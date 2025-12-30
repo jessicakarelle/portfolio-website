@@ -4,6 +4,22 @@
         position: relative;
         top: 0;
     }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        position: relative !important;
+        top: 0 !important;
+    }
 }
 /* Ordinateurs */
 @media (max-width: 1024px) {
