@@ -36,8 +36,8 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
-section{
-    padding: 1rem;
+section {
+    padding: 1.9rem !important;
 }
 .bg-grid {
     position: fixed;

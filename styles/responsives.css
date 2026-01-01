@@ -20,6 +20,18 @@
         position: relative !important;
         top: 0 !important;
     }
+    h2,
+    h3,
+    h4,
+    h5,
+    ul li,
+    a,
+    div a {
+        text-align: center;
+    }
+    section {
+        padding: 1rem !important;
+    }
 }
 /* Ordinateurs */
 @media (max-width: 1024px) {
