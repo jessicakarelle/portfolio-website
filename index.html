@@ -204,6 +204,36 @@
                         >
                     </div>
                 </article>
+                <article class="project-card project-4 box">
+                    <h3 class="project-title">Système de Gestion de Bibliothèque</h3>
+                    <p class="project-context">Projet académique - Application console</p>
+                    <p class="project-description">
+                        Système complet de gestion de bibliothèque permettant de gérer les livres, les membres et les
+                        emprunts. Calcul automatique des retards et des amendes avec un système de rapports et
+                        statistiques.
+                    </p>
+                    <ul class="project-tech">
+                        <li>C#</li>
+                        <li>Architecture MVC</li>
+                        <li>LINQ</li>
+                        <li>JSON</li>
+                    </ul>
+                    <div class="project-links">
+                        <button
+                            class="btn btn-outline-secondary rounded-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal4">
+                            Voir le projet
+                        </button>
+
+                        <a
+                            href="https://github.com/jktchikapa/library-management-system"
+                            target="_blank"
+                            class="btn btn-outline-secondary rounded-0 ms-2"
+                            ><i class="fa-brands fa-github"></i> GitHub</a
+                        >
+                    </div>
+                </article>
             </div>
         </section>
         <section id="skills-section" class="skills-section container box">
@@ -440,6 +470,78 @@
                     </div>
                     <div class="modal-footer">
                         <a href="https://github.com/jktchikapa/portfolio-website" target="_blank" class="btn btn-dark"
+                            ><i class="fab fa-github me-2"></i>Code source</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal4" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold">Système de Gestion de Bibliothèque</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carousel4" class="carousel slide mb-4" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button
+                                    type="button"
+                                    data-bs-target="#carousel4"
+                                    data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carousel4" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carousel4" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/imgs/project4-screenshot1.png" class="d-block w-100" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/imgs/project4-screenshot2.png" class="d-block w-100" alt="" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/imgs/project4-screenshot3.png" class="d-block w-100" alt="" />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carousel4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carousel4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <h6 class="fw-bold mb-3">Description</h6>
+                        <p>
+                            Application console en C# pour gérer une bibliothèque complète. Le système permet de gérer
+                            les livres, inscrire des membres, effectuer des emprunts avec calcul automatique des retards
+                            et des amendes (0.50$/jour). Architecture MVC avec validation des données et système de
+                            rapports statistiques.
+                        </p>
+                        <h6 class="fw-bold mb-3">Fonctionnalités</h6>
+                        <ul>
+                            <li>Gestion complète des livres (ajout, modification, recherche)</li>
+                            <li>Système d'inscription et de suivi des membres</li>
+                            <li>Emprunts avec période de 14 jours et prolongation</li>
+                            <li>Calcul automatique des amendes et retards</li>
+                            <li>Rapports statistiques (top 5 livres, amendes, etc.)</li>
+                            <li>Sauvegarde des données en JSON</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <a
+                            href="https://github.com/jktchikapa/library-management-system"
+                            target="_blank"
+                            class="btn btn-dark"
                             ><i class="fab fa-github me-2"></i>Code source</a
                         >
                     </div>
