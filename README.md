@@ -1,20 +1,42 @@
-# Portfolio
+<p align="center">
+  <img src="images/screenshot.png" width="100%" alt="Screenshot of the project">
+</p>
 
-Portfolio personnel de **Jessica Karelle**, étudiante développeuse C#.
+# Portfolio Website
 
-## À propos
+Personal portfolio website of Jessica Karelle, computer science student.  
+Showcasing web applications, C# projects, and 2D games.
 
-Site web présentant mes projets : applications web, applications en C# et jeux 2D.  
-Objectif : faire simple, propre et efficace.
+## Features
+
+- Responsive design
+- Project modals with details
+- Smooth scrolling navigation
+- Contact section
 
 ## Technologies
 
--   HTML, CSS, JavaScript
--   Bootstrap 5
--   Font Awesome, Google Fonts
+- HTML5, CSS3, JavaScript
+- Bootstrap 5
+- Font Awesome, Google Fonts
 
-## Lancer le projet
+## Tools
 
+- Git
+- Visual Studio Code
+
+## Getting Started
 ```bash
 git clone https://github.com/jktchikapa/portfolio-website.git
+cd portfolio-website
 ```
+
+Open `index.html` in your browser.
+
+## Credits
+
+Developed by [Jessica Karelle](https://github.com/jktchikapa)
+
+## License
+
+Personal Project
