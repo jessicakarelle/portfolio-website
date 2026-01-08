@@ -22,18 +22,20 @@
     .project-card {
         position: relative !important;
         top: 0 !important;
+        padding: 1rem;
     }
-    .section-title{
+    .section-title {
         text-align: center;
         margin: 2rem;
     }
     section {
         padding: 1rem !important;
+        min-width: 100% !important;
     }
-    .invisible-content{
+    .invisible-content {
         display: none;
     }
-    .featured-title{
+    .featured-title {
         margin: 1rem 0;
     }
 }
