@@ -29,9 +29,10 @@ Showcasing web applications, C# projects, and 2D games.
 ```bash
 git clone https://github.com/jessicakarelle/portfolio-website.git
 cd portfolio-website
+start index.html
 ```
 
-Open `index.html` in your browser.
+Open `index.html` in your browser or just search for "jessicakarelle.com".
 
 ## Credits
 
