@@ -1,61 +1,45 @@
-/*=== First part ====*/
-function makeElementVisible(entries) {
-    for (var i = 0; i < entries.length; i++) {
-        var entry = entries[i];
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-        }
-    }
-}
-var observerOptions = { threshold: 0.1 };
-var observer = new IntersectionObserver(makeElementVisible, observerOptions);
-var boxes = document.querySelectorAll(".box");
-for (var j = 0; j < boxes.length; j++) {
-    observer.observe(boxes[j]);
-}
+const boxes = document.querySelectorAll(".box");
+const stats = document.querySelectorAll(".stat-number");
 
-/*=== Second part ====*/
-function applyParallax() {
-    var scrolled = window.pageYOffset;
-    var hero = document.querySelector(".hero-section .container");
+function animateNumber(el) {
+    let max = parseInt(el.dataset.target);
+    let count = 0;
 
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = "translateY(" + scrolled * 0.3 + "px)";
-        hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
-    }
-}
-window.addEventListener("scroll", applyParallax);
+    const interval = setInterval(() => {
+        count++;
+        el.textContent = count;
 
-/*=== Third part ====*/
-function animateNumber(element) {
-    var targetAttribute = element.getAttribute("data-target");
-    if (!targetAttribute) {
-        return;
-    }
-    var number = parseInt(targetAttribute);
-    var text = element.textContent;
-    var symbol = text.replace(/[0-9]/g, "");
-    var count = 0;
-    var intervalId = setInterval(function () {
-        if (count < number) {
-            count++;
-            element.textContent = count + symbol;
-        } else {
-            clearInterval(intervalId);
+        if (count >= max) {
+            clearInterval(interval);
         }
     }, 20);
 }
-function startStatsAnimation(entries) {
-    for (var i = 0; i < entries.length; i++) {
-        var entry = entries[i];
-        if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
-            entry.target.classList.add("animated");
-            animateNumber(entry.target);
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && entry.target.classList.contains("box")) {
+            entry.target.classList.add("visible");
         }
+
+        if (entry.isIntersecting && entry.target.classList.contains("stat-number")) {
+            animateNumber(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+boxes.forEach(el => observer.observe(el));
+stats.forEach(el => observer.observe(el));
+
+const hero = document.querySelector(".hero-section .container");
+
+window.addEventListener("scroll", () => {
+    if (!hero) return;
+
+    const scroll = window.scrollY;
+
+    if (scroll < window.innerHeight) {
+        hero.style.transform = `translateY(${scroll * 0.3}px)`;
+        hero.style.opacity = 1 - scroll / 1000;
     }
-}
-var statsObserver = new IntersectionObserver(startStatsAnimation, { threshold: 0.5 });
-var stats = document.querySelectorAll(".stat-number");
-for (var k = 0; k < stats.length; k++) {
-    statsObserver.observe(stats[k]);
-}
+});
