@@ -5,7 +5,7 @@
 # Portfolio Website
 
 Personal portfolio website of Jessica Karelle, computer science student.  
-Showcasing web applications, C# projects, and 2D games.
+Showcasing web site, C# projects.
 
 ## Features
 
@@ -24,8 +24,10 @@ Showcasing web applications, C# projects, and 2D games.
 
 - Git
 - Visual Studio Code
+- Phcode.dev
 
 ## Getting Started
+
 ```bash
 git clone https://github.com/jessicakarelle/portfolio-website.git
 cd portfolio-website
