@@ -34,7 +34,7 @@ cd portfolio-website
 start index.html
 ```
 
-Open `index.html` in your browser or just search for "jessicakarelle.com".
+Open `index.html` in your browser or just search for "portfolio.jessicakarelle.com".
 
 ## Credits
 
