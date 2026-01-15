@@ -412,3 +412,16 @@ section:not(.hero-section, .projects-section) {
 .btn-close {
     filter: invert(1);
 }
+.all-articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.all-articles-container .article-card {
+    position: relative;
+    top: 0 !important;
+    min-height: auto;
+    flex: 0 1 calc(33.333% - 1.35rem);
+}
