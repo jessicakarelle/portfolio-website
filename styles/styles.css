@@ -440,10 +440,11 @@ section:not(.hero-section, .projects-section) {
     z-index: 1000;
     transition:
         background 0.3s,
-        color 0.3s;
+        color 0.3s,
+        transform 0.3s;
 }
-
 .scroll-to-top:hover {
     background: var(--white);
     color: var(--black);
+    transform: translateY(-7px);
 }
