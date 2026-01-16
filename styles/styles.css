@@ -425,3 +425,25 @@ section:not(.hero-section, .projects-section) {
     min-height: auto;
     flex: 0 1 calc(33.333% - 1.35rem);
 }
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--white);
+    background: var(--gray-dark);
+    padding: 15px;
+    border-radius: 2rem;
+    border: 1px solid var(--gray-light);
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition:
+        background 0.3s,
+        color 0.3s;
+}
+
+.scroll-to-top:hover {
+    background: var(--white);
+    color: var(--black);
+}
